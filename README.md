@@ -260,7 +260,7 @@ LICENSE.md                   — CC BY-NC-SA 4.0 (sample) / commercial (full dat
 ## 📬 Contact
 
 Questions about the data, methodology, or custom licensing?  
-**Email:** [YOUR_EMAIL]  
+**Email:** lensreward@gmail.com  
 **Twitter/X:** [@YOUR_HANDLE]
 
 ---
