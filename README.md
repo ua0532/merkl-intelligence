@@ -186,7 +186,7 @@ The complete dataset is available in three tiers:
 
 > Saves 5–10 hours of manual filtering. Focus on the 2.4% of wallets that hold 55% of the value.
 
-**🛒 Get the full dataset:** [YOUR_LINK_HERE]
+**🛒 Get the full dataset:** email to lensreward@gmail.com
 
 ---
 
