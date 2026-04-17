@@ -4,10 +4,10 @@
 
 ![Merkl Intelligence](merkl_v3_insights.png)
 
-[![Total Value](https://img.shields.io/badge/Total_Value-~$308K_USD-brightgreen)](https://github.com)
-[![Wallets](https://img.shields.io/badge/Wallets-4%2C602_unique-orange)](https://github.com)
+[![Total Value](https://img.shields.io/badge/Total_Value-~$428.9K_USD-brightgreen)](https://github.com)
+[![Wallets](https://img.shields.io/badge/Wallets-4%2C869_unique-orange)](https://github.com)
 [![Chains](https://img.shields.io/badge/Chains-8-blue)](https://github.com)
-[![Tokens](https://img.shields.io/badge/Tokens-20-purple)](https://github.com)
+[![Tokens](https://img.shields.io/badge/Tokens-21-purple)](https://github.com)
 [![Version](https://img.shields.io/badge/Dataset-v3.1-lightgrey)](https://github.com)
 [![License](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-red)](LICENSE.md)
 
@@ -15,18 +15,18 @@
 
 ## 🎯 What Is This?
 
-A **3-layer scored intelligence dataset** of **4,602 unique wallets** with unclaimed rewards from the [Merkl protocol](https://merkl.xyz) (by Angle Labs) — a DeFi incentive distribution system used by leading protocols including Morpho, Pendle, and others.
+A **3-layer scored intelligence dataset** of **4,869 unique wallets** with unclaimed rewards from the [Merkl protocol](https://merkl.xyz) (by Angle Labs) — a DeFi incentive distribution system used by leading protocols including Morpho, Pendle, and others.
 
-**Total unclaimed value: ~$308,162 USD across 6,594 campaigns**  
-**Snapshot date: 2026-04-13 · ETH @ $2,184.08**
+**Total unclaimed value: ~$428,865 USD across 8,019 campaigns**  
+**Snapshot date: 2026-04-17 · ETH @ $2,340.37**
 
 This is NOT a raw address dump. Each wallet is processed through a scoring pipeline that produces:
 
 - ✅ **`address_score`** — composite wallet-level score (0–100) based on ETH amount, claim probability, campaign count, and diversification
 - ✅ **`tokens_breakdown`** — `"MORPHO:1.23ETH; PYUSD:0.45ETH"` — full portfolio in one field
 - ✅ **`avg_claim_probability`** — heuristic prediction of staying unclaimed 30 days
-- ✅ **Whale flagging** — 111 wallets hold >0.3 ETH (~55% of total value)
-- ✅ **Diversification analysis** — multi-token / multi-chain wallet profiling
+- ✅ **Whale flagging** — 136 wallets hold >0.3 ETH (~59.1% of total value)
+- ✅ **Diversification analysis** — 348 multi-token wallets (7.15%)
 - ✅ **Native token USD pricing** — MORPHO, OP, RLUSD priced at market rates, not ETH-conversion
 
 ---
@@ -35,39 +35,40 @@ This is NOT a raw address dump. Each wallet is processed through a scoring pipel
 
 | Metric | Value |
 |--------|-------|
-| **Unique wallets** | 4,602 |
-| **Total campaigns** | 6,594 |
-| **Total value** | ~$308,162 USD |
-| **Total ETH** | 141.10 ETH |
-| **Whale wallets (>0.3 ETH)** | 111 wallets — 55.1% of total value |
-| **High probability (>60%)** | 3,729 wallets (81%) |
-| **Very high probability (>80%)** | 2,989 wallets (65%) |
-| **Diversified wallets** | 356 (7.7% — multi-token) |
-| **Avg campaigns per wallet** | 1.43 |
+| **Unique wallets** | 4,869 |
+| **Total campaigns** | 8,019 |
+| **Total value** | ~$428,865 USD |
+| **Total ETH** | 183.25 ETH |
+| **Whale wallets (>0.3 ETH)** | 136 wallets — 59.1% of total value |
+| **High probability (>60%)** | 4,028 wallets (82.7%) |
+| **Very high probability (>80%)** | 3,469 wallets (71.2%) |
+| **Diversified wallets** | 348 (7.15% — multi-token) |
+| **Avg campaigns per wallet** | 1.65 |
 | **Unique blockchains** | 8 |
-| **Unique token types** | 20 |
-| **Primary token** | MORPHO (3,851 campaigns) |
-| **Primary chain** | Base (3,242 campaigns) |
+| **Unique token types** | 21 |
+| **Primary token** | MORPHO (5,539 campaigns) |
+| **Primary chain** | Base (4,384 campaigns) |
 
 ### Top Tokens by Campaign Count
 
 | Token | Campaigns | Notes |
 |-------|-----------|-------|
-| MORPHO | 3,851 | Governance token — low claim motivation |
-| PYUSD | 699 | PayPal stablecoin — higher claim rate |
-| QUICK | 608 | Small-cap governance |
-| OP | 397 | Optimism governance |
-| RLUSD | 384 | Ripple stablecoin |
-| USDT | 329 | Stablecoin |
+| MORPHO | 5,539 | Governance token — low claim motivation |
+| PYUSD | 655 | PayPal stablecoin — higher claim rate |
+| QUICK | 618 | Small-cap governance |
+| OP | 388 | Optimism governance |
+| RLUSD | 356 | Ripple stablecoin |
+| USDC | 128 | Stablecoin |
+| USDT | 126 | Stablecoin |
 
 ### Value Distribution
 
-| Segment | USD Value |
-|---------|-----------|
-| Top 10 wallets | $39,617 |
-| Top 100 wallets | $162,152 (53% of total) |
-| Top 500 wallets | $251,536 (82% of total) |
-| Whale wallets (111) | $169,848 (55% of total) |
+| Segment | ETH | USD Value | % of Total |
+|---------|-----|-----------|-------------|
+| Top 10 wallets | 30.13 ETH | $70,515 | 16.4% |
+| Top 100 wallets | 95.73 ETH | $224,027 | 52.2% |
+| Top 500 wallets | 148.94 ETH | $348,575 | 81.3% |
+| Whale wallets (136) | 108.26 ETH | $253,366 | 59.1% |
 
 ---
 
@@ -77,9 +78,9 @@ The dataset is structured in three complementary layers:
 
 | Layer | File | Rows | Description |
 |-------|------|------|-------------|
-| **Wallet** (PRIMARY) | `merkl_v3_address_only.csv` | 4,602 | **1 row per wallet.** De-duplicated. Full portfolio summary. |
+| **Wallet** (PRIMARY) | `merkl_v3_address_only.csv` | 4,869 | **1 row per wallet.** De-duplicated. Full portfolio summary. |
 | **Token drill-down** | `merkl_v3_address_token.csv` | varies | 1 row per wallet+token+chain combination. |
-| **Campaign detail** | `merkl_v3_full_detail.csv` | 6,594 | Raw per-campaign rows. Same wallet may repeat. |
+| **Campaign detail** | `merkl_v3_full_detail.csv` | 8,019 | Raw per-campaign rows. Same wallet may repeat. |
 
 > **Note:** `merkl_v3_full_detail.csv` contains multiple rows per wallet (one per campaign). This is expected. Always use `merkl_v3_address_only.csv` as the primary ranked view.
 
@@ -103,13 +104,13 @@ The dataset is structured in three complementary layers:
 | `total_campaigns` | Number of distinct campaigns |
 | `unique_tokens` | Number of distinct token types |
 | `unique_chains` | Number of distinct chains |
-| `total_expected_value` | Conservative extractable value estimate (USD) |
+| `total_expected_value` | Conservative extractable value estimate (USD) — $45,415 |
 
 ---
 
 ## 🆓 Free Sample
 
-This repository contains a **representative sample** (~150 wallets) from the **middle segment** of the dataset (score percentiles 20–80 by total ETH).
+This repository contains a **representative sample** (~150 wallets) from the **middle segment** of the dataset (percentiles 20–80 by total ETH).
 
 📁 **File:** [`merkl_v3_sample.csv`](merkl_v3_sample.csv)
 
@@ -154,7 +155,7 @@ The scoring system models these signals into a per-wallet prediction of whether 
 
 ### For On-Chain Analysts
 - **Market inefficiency mapping** — unclaimed rewards = locked supply signal
-- **Whale profiling** — 111 wallets hold 55% of value, most not claiming
+- **Whale profiling** — 136 wallets hold 59% of value, most not claiming
 - **Token supply analysis** — MORPHO unclaimed as circulating supply proxy
 
 ---
@@ -170,7 +171,7 @@ The complete dataset is available in three tiers:
 - `data_dictionary.txt`
 
 ### 🔴 Full — $249
-- `merkl_v3_address_only.csv` — All 4,602 wallets (PRIMARY view)
+- `merkl_v3_address_only.csv` — All 4,869 wallets (PRIMARY view)
 - `merkl_v3_address_token.csv` — Token breakdown
 - `merkl_v3_full_detail.csv` — Campaign-level raw data
 - `merkl_v3_stats.json` + `merkl_v3_insights.png`
@@ -178,13 +179,13 @@ The complete dataset is available in three tiers:
 
 ### 💎 PRO — $399 ⭐ Best Value
 **Everything in Full, plus:**
-- `merkl_v3_whales.csv` — 111 whale wallets only (>0.3 ETH)
+- `merkl_v3_whales.csv` — 136 whale wallets only (>0.3 ETH)
 - `merkl_v3_top200.csv` — Top-200 by `address_score` (most actionable)
 - `Merkl_Strategy_Guide_v1.pdf` — 15-page methodology and action framework
 - 1 monthly update included
 - Priority email support
 
-> Saves 5–10 hours of manual filtering. Focus on the 2.4% of wallets that hold 55% of the value.
+> Saves 5–10 hours of manual filtering. Focus on the 2.8% of wallets that hold 59% of the value.
 
 **🛒 Get the full dataset:** email to lensreward@gmail.com
 
@@ -212,23 +213,23 @@ min(total_eth × 50, 50)        # up to 50 pts — ETH amount
 | Unclaimed > 180 days | +30 pts |
 | MORPHO token | +12 pts (governance, low urgency) |
 | Stablecoins (PYUSD, RLUSD) | −8 pts (real $ value) |
-| Base / Scroll chain | +10 pts (low-activity L2) |
+| Base chain | +10 pts (low-activity L2) |
 | Ethereum mainnet | −5 pts |
 
-**Opportunity type classification:**
+**Opportunity type classification (from current data):**
 
-| Type | Condition |
-|------|-----------|
-| `high_confidence_high_value` | prob > 70%, amount > 0.1 ETH |
-| `high_confidence_medium_value` | prob > 70%, amount > 0.05 ETH |
-| `high_confidence_low_value` | prob > 70% |
-| `low_confidence_high_value` | amount > 0.2 ETH |
-| `low_confidence_medium_value` | amount > 0.05 ETH |
-| `speculative` | everything else |
+| Type | Count | Description |
+|------|-------|-------------|
+| `high_confidence_low_value` | 5,962 | Prob > 70%, small amount |
+| `speculative` | 1,505 | Low probability, any value |
+| `low_confidence_medium_value` | 355 | Amount > 0.05 ETH, low prob |
+| `low_confidence_high_value` | 188 | Amount > 0.2 ETH, low prob |
+| `high_confidence_medium_value` | 7 | Prob > 70%, amount > 0.05 ETH |
+| `high_confidence_high_value` | 2 | Prob > 70%, amount > 0.1 ETH |
 
 ### Known Limitations
 
-- **Snapshot data** — taken 2026-04-13, not real-time
+- **Snapshot data** — taken 2026-04-17, not real-time
 - **Heuristic scoring** — does not track cross-protocol activity
 - **USD pricing** — native token price where cached, ETH-conversion otherwise
 - **No PII** — wallet addresses only (public blockchain data)
@@ -260,10 +261,10 @@ LICENSE.md                   — CC BY-NC-SA 4.0 (sample) / commercial (full dat
 ## 📬 Contact
 
 Questions about the data, methodology, or custom licensing?  
-**Email:** lensreward@gmail.com  
-**Twitter/X:** [@YOUR_HANDLE]
+**Email:** lensreward@gmail.com 
+**Twitter/X:** https://x.com/LensReward
 
 ---
 
-*Snapshot: 2026-04-13 · Source: Merkl Protocol Public API · Dataset Version: 3.1*  
-*ETH price at scan: $2,184.08 · Pipeline: `merkl_pipeline_v3.py`*
+*Snapshot: 2026-04-17 · Source: Merkl Protocol Public API · Dataset Version: 3.1*  
+*ETH price at scan: $2,340.37 · Pipeline: `merkl_pipeline_v3.py`*
