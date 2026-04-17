@@ -267,4 +267,4 @@ Questions about the data, methodology, or custom licensing?
 ---
 
 *Snapshot: 2026-04-17 · Source: Merkl Protocol Public API · Dataset Version: 3.1*  
-*ETH price at scan: $2,340.37 · Pipeline: `merkl_pipeline_v3.py`*
+*ETH price at scan: $2,340.37*
